@@ -1,5 +1,4 @@
 import React from 'react'
-import './NavBar.css'
 import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -10,25 +9,33 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         textAlign: 'center',
     },
+    paper: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        '& > *': {
+            margin: theme.spacing(1),
+            width: theme.spacing(16),
+            height: theme.spacing(16),
+        },
 
+    }
 }));
 
 
 const NavBar = () => {
     const classes = useStyles();
-
     return (
         <div>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
 
-                    <Typography variant="h6" className={classes.title}>
-                        Centered Text
+                <Typography variant="h6" className={classes.title}>
+                        Bewine
                     </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
-        </div>
+        </div >
     );
 }
 
