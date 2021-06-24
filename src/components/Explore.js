@@ -9,11 +9,14 @@ const useStyles = makeStyles(theme => (
             backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/bg1.jpg"})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
+            backgroundPosition: "50% 50%",
             [theme.breakpoints.up("sm")]:{
-              minHeight: "0",
+              minHeight: "100",
               backgroundSize: "cover",
-              backgroundPosition: "top left"
+              backgroundPosition: "50% 50%",
+              position: "relative",
+              width: "100%",
+              height: "100%",
             }
         },
     }

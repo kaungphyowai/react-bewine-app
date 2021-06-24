@@ -12,7 +12,6 @@ const App = () => {
 
       </Grid>
       <Grid item container>
-
       <Explore />
       </Grid>
       <Grid item container>
