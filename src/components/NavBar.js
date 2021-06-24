@@ -18,24 +18,29 @@ const useStyles = makeStyles(theme => ({
             height: theme.spacing(16),
         },
 
-    }
+    },
+    wrap: {
+        display: "block",
+    },
+    offset: theme.mixins.toolbar,
 }));
 
 
 const NavBar = () => {
     const classes = useStyles();
     return (
-        <div>
+        <>
             <AppBar position="fixed">
-                <Toolbar>
+            <Toolbar>
 
                 <Typography variant="h6" className={classes.title}>
                         Bewine
                     </Typography>
                     <Button color="inherit">Login</Button>
-                </Toolbar>
+            </Toolbar>
             </AppBar>
-        </div >
+            <div className={classes.offset} />
+        </>
     );
 }
 
