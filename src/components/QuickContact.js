@@ -4,7 +4,6 @@ import React from 'react'
 const useStyles = makeStyles(theme => (
     {
     root: {
-        backgroundColor: "#024126",
         paddingTop: "40",
         justifyContent: "center",
         width: "70%",
@@ -22,6 +21,7 @@ const useStyles = makeStyles(theme => (
 const QuickContact = () => {
     const classes = useStyles();
     return (
+        <Box style={{minWidth: "100%" , backgroundColor: "#024126",}} pt={5}>
 
         <Grid container xs={12} className={classes.root}>
             {/* First Padding */}
@@ -49,6 +49,7 @@ const QuickContact = () => {
            {/* Last Padding */}
            <Grid item xs={0} sm={2.5}/>
         </Grid>
+        </Box>
     )
 }
 

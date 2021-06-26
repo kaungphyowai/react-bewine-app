@@ -1,4 +1,4 @@
-import { makeStyles, Grid, Typography } from '@material-ui/core'
+import { makeStyles, Grid, Typography, Box } from '@material-ui/core'
 import React from 'react'
 
 
@@ -15,6 +15,8 @@ const useStyles = makeStyles(theme => ({
 const AboutUs = () => {
     const classes = useStyles();
     return (
+        <Box style={{minWidth: "100%" , backgroundColor: "#024126",}} pt={10}>
+
         <Grid container className={classes.root} >
             <Grid item container xs={12} justify="center">
                 <Typography>
@@ -27,6 +29,7 @@ const AboutUs = () => {
                 </Typography>
             </Grid>
         </Grid>
+        </Box>
     )
 }
 
