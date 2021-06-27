@@ -28,6 +28,13 @@ const AboutUs = () => {
                 HISTORY AND TRADITION OF OUR VINEYARDS
                 </Typography>
             </Grid>
+
+            <Grid item xs={6}>
+                <Box pl={100}>
+                <img src={process.env.PUBLIC_URL + "/assets/1897.jpg"} />
+
+                </Box>
+            </Grid>
         </Grid>
         </Box>
     )
