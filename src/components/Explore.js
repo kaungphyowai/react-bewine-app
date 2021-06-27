@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => (
 const Explore = () => {
     const classes = useStyles();
     return (
-       <>
+       
         <Grid container className={classes.root} alignContent="center" >
           {/* first padding */}
           <Grid item xs={2} sm={2} />
@@ -53,7 +53,7 @@ const Explore = () => {
           {/* last padding */}
           <Grid item xs={2} sm={6} />
         </Grid>
-       </>
+       
     )
 }
 

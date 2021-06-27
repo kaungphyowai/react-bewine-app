@@ -1,20 +1,7 @@
-import { Box, Grid, makeStyles, Typography } from '@material-ui/core'
+import { Box, Grid, Typography } from '@material-ui/core'
 import React from 'react'
 
-const useStyles = makeStyles(theme => (
-    {
-    root: { 
-        // [theme.breakpoints.up("sm")]:{
-        //     backgroundSize: "cover",
-        //     backgroundPosition: "50% 50%",
-        //     position: "relative",
-        //     width: "100%",
-        //     height: "100%",
-        //   }
-    },
-}))
 const QuickContact = () => {
-    const classes = useStyles();
     return (
         <Box style={{minWidth: "100%" , backgroundColor: "#024126",}} pt={5}>
 

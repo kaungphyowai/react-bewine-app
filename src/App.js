@@ -4,6 +4,8 @@ import Explore from './components/Explore'
 import QuickContact from './components/QuickContact'
 import { Grid } from '@material-ui/core'
 import AboutUs from './components/AboutUs'
+import HowWeWork from './components/HowWeWork'
+import MeetOurFamilyBusiness from './components/MeetOurFamilyBusiness'
 const App = () => {
 
   return (
@@ -22,6 +24,12 @@ const App = () => {
       <Grid item container>
         <AboutUs /> 
       </Grid>
+      <Grid item container>
+        <HowWeWork /> 
+      </Grid>
+      <Grid item container>
+        <MeetOurFamilyBusiness />
+        </Grid>
     </Grid>
     
   )

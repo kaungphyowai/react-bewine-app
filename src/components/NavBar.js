@@ -36,7 +36,7 @@ const NavBar = () => {
                 <Typography variant="h6" className={classes.title}>
                         Bewine
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button >Login</Button>
             </Toolbar>
             </AppBar>
             <div className={classes.offset} />
