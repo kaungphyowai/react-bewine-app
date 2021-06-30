@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   titleStyle: {
-    fontFamily: "Josefin Sans",
     fontWeight: "bolder",
     textAlign: "center",
     fontSize: "250%",
@@ -31,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonStyle: {
     color: "#fff",
-    fontFamily: "Josefin Sans",
     padding: "10px 15px",
     [theme.breakpoints.up("sm")]: {
       padding: "15px 30px",

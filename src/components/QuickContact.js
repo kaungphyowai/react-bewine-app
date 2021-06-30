@@ -30,12 +30,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   firstTextStyle: {
-    fontFamily: "Josefin Sans",
     fontSize: "80%",
     fontWeight: "bold",
   },
   secondTextStyle: {
-    fontFamily: "Josefin Sans",
     fontWeight: "bold",
   },
 }));
