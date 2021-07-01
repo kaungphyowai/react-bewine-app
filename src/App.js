@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs";
 import HowWeWork from "./components/HowWeWork";
 import MeetOurFamilyBusiness from "./components/MeetOurFamilyBusiness";
 import JoinNow from "./components/JoinNow";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
@@ -39,22 +40,7 @@ const App = () => {
         </Grid>
       </Grid>
 
-      <Box
-        style={{
-          backgroundColor: "#f2e8df",
-          borderTopWidth: "1",
-          borderTopStyle: "solid",
-          borderTopColor: "#d9d0c8",
-        }}
-        pt={4}
-        pb={4}
-      >
-        <Grid container xs={12} justify="center">
-          <Typography>
-            © 2021 BeWine3 - Betheme. All Rights Reserved. Muffin group
-          </Typography>
-        </Grid>
-      </Box>
+      <Footer />
     </>
   );
 };

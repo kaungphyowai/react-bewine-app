@@ -50,14 +50,6 @@ const useStyles = makeStyles((theme) => ({
       padding: "15px 30px",
     },
   },
-
-  buttonStyle: {
-    color: "#fff",
-    padding: "10px 15px",
-    [theme.breakpoints.up("sm")]: {
-      padding: "15px 30px",
-    },
-  },
 }));
 const AboutUs = () => {
   const classes = useStyles();
