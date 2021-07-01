@@ -31,8 +31,11 @@ const useStyles = makeStyles((theme) => ({
   buttonStyle: {
     color: "#fff",
     padding: "10px 15px",
+    fontFamily: "Tenor Sans",
+    fontSize: "10px",
     [theme.breakpoints.up("sm")]: {
       padding: "15px 30px",
+      fontSize: "medium",
     },
   },
 }));
@@ -74,7 +77,7 @@ const Explore = () => {
               </Grid>
             </Grid>
             {/* Button left padding */}
-            <Grid item xs={2} sm={4} />
+            <Grid item xs={0} sm={4} />
           </Grid>
         </Grid>
         {/* last padding */}
