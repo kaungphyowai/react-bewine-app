@@ -17,7 +17,7 @@ const NumberContent = ({ subtitleStyle, descriptionFaded, numberTitle }) => {
           ALIQUAM ERAT IPSUM
         </Typography>
       </Grid>
-      <Grid item container justify="center">
+      <Grid item container justify="center" style={{ paddingLeft: "10px" }}>
         <Typography variant="h7" align="center" className={descriptionFaded}>
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus faucibus.
