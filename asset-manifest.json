@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-bewine-app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/react-bewine-app/static/js/main.d8af01a7.chunk.js",
-    "main.js.map": "/react-bewine-app/static/js/main.d8af01a7.chunk.js.map",
-    "runtime-main.js": "/react-bewine-app/static/js/runtime-main.e7282c51.js",
-    "runtime-main.js.map": "/react-bewine-app/static/js/runtime-main.e7282c51.js.map",
-    "static/js/2.b85c6957.chunk.js": "/react-bewine-app/static/js/2.b85c6957.chunk.js",
-    "static/js/2.b85c6957.chunk.js.map": "/react-bewine-app/static/js/2.b85c6957.chunk.js.map",
-    "static/js/3.ec369704.chunk.js": "/react-bewine-app/static/js/3.ec369704.chunk.js",
-    "static/js/3.ec369704.chunk.js.map": "/react-bewine-app/static/js/3.ec369704.chunk.js.map",
+    "main.css": "/react-bewine-app/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "/react-bewine-app/static/js/main.fead27d9.chunk.js",
+    "main.js.map": "/react-bewine-app/static/js/main.fead27d9.chunk.js.map",
+    "runtime-main.js": "/react-bewine-app/static/js/runtime-main.bbbb41a4.js",
+    "runtime-main.js.map": "/react-bewine-app/static/js/runtime-main.bbbb41a4.js.map",
+    "static/js/2.b5d337a9.chunk.js": "/react-bewine-app/static/js/2.b5d337a9.chunk.js",
+    "static/js/2.b5d337a9.chunk.js.map": "/react-bewine-app/static/js/2.b5d337a9.chunk.js.map",
+    "static/js/3.81fb41d2.chunk.js": "/react-bewine-app/static/js/3.81fb41d2.chunk.js",
+    "static/js/3.81fb41d2.chunk.js.map": "/react-bewine-app/static/js/3.81fb41d2.chunk.js.map",
     "index.html": "/react-bewine-app/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/react-bewine-app/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.b85c6957.chunk.js.LICENSE.txt": "/react-bewine-app/static/js/2.b85c6957.chunk.js.LICENSE.txt"
+    "static/css/main.2ae47eeb.chunk.css.map": "/react-bewine-app/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.b5d337a9.chunk.js.LICENSE.txt": "/react-bewine-app/static/js/2.b5d337a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7282c51.js",
-    "static/js/2.b85c6957.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.d8af01a7.chunk.js"
+    "static/js/runtime-main.bbbb41a4.js",
+    "static/js/2.b5d337a9.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.fead27d9.chunk.js"
   ]
 }
