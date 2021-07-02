@@ -1,5 +1,5 @@
 import React from "react";
-import ProductDisplayGridLayout from "../Components/ImageText/ProductDisplayGridLayout/ProductDisplayGridLayout";
+import ProductDisplayGridLayout from "../Components/ProductDisplayGridLayout/ProductDisplayGridLayout";
 
 const HowWeWork = () => {
   return (

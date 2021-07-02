@@ -55,6 +55,7 @@ const BusinessCard = ({
   image,
   subtitle,
   description,
+  checkedDisplay = true,
 }) => {
   const classes = useStyle();
   return (
@@ -87,26 +88,30 @@ const BusinessCard = ({
           </Typography>
         </Grid>
       </Grid>
-      <Grid xs={12} className={classes.textColumn}>
-        <Grid item container xs={12} justify="center" alignItems="center">
-          <CheckIcon className={classes.CheckIcon} />
-          <Typography component="span" className={classes.checked}>
-            Aliquam fringilla aliquam
-          </Typography>
+      {checkedDisplay ? (
+        <Grid xs={12} className={classes.textColumn}>
+          <Grid item container xs={12} justify="center" alignItems="center">
+            <CheckIcon className={classes.CheckIcon} />
+            <Typography component="span" className={classes.checked}>
+              Aliquam fringilla aliquam
+            </Typography>
+          </Grid>
+          <Grid item container xs={12} justify="center" alignItems="center">
+            <CheckIcon className={classes.CheckIcon} />
+            <Typography component="span" className={classes.checked}>
+              Proin bibendum feugiat
+            </Typography>
+          </Grid>
+          <Grid item container xs={12} justify="center" alignItems="center">
+            <CheckIcon className={classes.CheckIcon} />
+            <Typography component="span" className={classes.checked}>
+              Curabitur ut egestas
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item container xs={12} justify="center" alignItems="center">
-          <CheckIcon className={classes.CheckIcon} />
-          <Typography component="span" className={classes.checked}>
-            Proin bibendum feugiat
-          </Typography>
-        </Grid>
-        <Grid item container xs={12} justify="center" alignItems="center">
-          <CheckIcon className={classes.CheckIcon} />
-          <Typography component="span" className={classes.checked}>
-            Curabitur ut egestas
-          </Typography>
-        </Grid>
-      </Grid>
+      ) : (
+        <> </>
+      )}
     </Grid>
   );
 };

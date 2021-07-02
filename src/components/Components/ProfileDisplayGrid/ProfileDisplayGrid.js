@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box, Button, makeStyles } from "@material-ui/core";
-import BusinessCard from "../../../HomeComponent/BusinessCard";
+import BusinessCard from "../../HomeComponent/BusinessCard";
 
 const useStyles = makeStyles((theme) => ({
   subtitle: {
@@ -46,6 +46,8 @@ const ProfileDisplayGrid = ({
   cardsubtitle3,
   cardimage3,
   carddescription3,
+  buttonDisplay = true,
+  checkedDisplay = true,
 }) => {
   const classes = useStyles();
   return (
@@ -75,6 +77,7 @@ const ProfileDisplayGrid = ({
                 subtitle={cardsubtitle1}
                 image={cardimage1}
                 description={carddescription1}
+                checkedDisplay={checkedDisplay}
               />
               <BusinessCard
                 titleFirstLine={cardTitleFirstLine2}
@@ -82,6 +85,7 @@ const ProfileDisplayGrid = ({
                 subtitle={cardsubtitle2}
                 image={cardimage2}
                 description={carddescription2}
+                checkedDisplay={checkedDisplay}
               />
               <BusinessCard
                 titleFirstLine={cardTitleFirstLine3}
@@ -89,31 +93,35 @@ const ProfileDisplayGrid = ({
                 subtitle={cardsubtitle3}
                 image={cardimage3}
                 description={carddescription3}
+                checkedDisplay={checkedDisplay}
               />
             </Grid>
-
-            <Box pt={10} pb={10} style={{ minWidth: "100%" }}>
-              <Grid container xs={12} sm={12} justify="center" spacing={1}>
-                <Grid item>
-                  <Button
-                    variant="contained"
-                    className={classes.buttonStyle}
-                    style={{ backgroundColor: "#62021D" }}
-                  >
-                    ABOUT US
-                  </Button>
+            {buttonDisplay ? (
+              <Box pt={10} pb={10} style={{ minWidth: "100%" }}>
+                <Grid container xs={12} sm={12} justify="center" spacing={1}>
+                  <Grid item>
+                    <Button
+                      variant="contained"
+                      className={classes.buttonStyle}
+                      style={{ backgroundColor: "#62021D" }}
+                    >
+                      ABOUT US
+                    </Button>
+                  </Grid>
+                  <Grid item>
+                    <Button
+                      variant="contained"
+                      className={classes.buttonStyle}
+                      style={{ backgroundColor: "#80A094" }}
+                    >
+                      OUR WINES
+                    </Button>
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <Button
-                    variant="contained"
-                    className={classes.buttonStyle}
-                    style={{ backgroundColor: "#80A094" }}
-                  >
-                    OUR WINES
-                  </Button>
-                </Grid>
-              </Grid>
-            </Box>
+              </Box>
+            ) : (
+              <></>
+            )}
           </Grid>
           {/* Last Padding */}
           <Grid item xs={1} sm={3} />

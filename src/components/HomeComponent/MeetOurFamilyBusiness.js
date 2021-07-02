@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileDisplayGrid from "../Components/ImageText/ProfileDisplayGrid/ProfileDisplayGrid";
+import ProfileDisplayGrid from "../Components/ProfileDisplayGrid/ProfileDisplayGrid";
 
 const MeetOurFamilyBusiness = () => {
   return (
