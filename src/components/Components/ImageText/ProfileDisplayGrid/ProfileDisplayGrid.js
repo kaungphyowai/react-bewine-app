@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography, Box, Button, makeStyles } from "@material-ui/core";
-import BusinessCard from "./BusinessCard";
+import BusinessCard from "../../../HomeComponent/BusinessCard";
 
 const useStyles = makeStyles((theme) => ({
   subtitle: {
@@ -27,7 +27,26 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const MeetOurFamilyBusiness = () => {
+const ProfileDisplayGrid = ({
+  mainTitle1,
+  mainTitle2FirstLine,
+  mainTitle2SecondLine,
+  cardTitleFirstLine1,
+  cardTitleSecondLine1,
+  cardsubtitle1,
+  cardimage1,
+  carddescription1,
+  cardTitleFirstLine2,
+  cardTitleSecondLine2,
+  cardsubtitle2,
+  cardimage2,
+  carddescription2,
+  cardTitleFirstLine3,
+  cardTitleSecondLine3,
+  cardsubtitle3,
+  cardimage3,
+  carddescription3,
+}) => {
   const classes = useStyles();
   return (
     <>
@@ -38,38 +57,38 @@ const MeetOurFamilyBusiness = () => {
           {/* Content */}
           <Grid item container xs={10} sm={6}>
             <Grid item container xs={12} sm={12} justify="center">
-              <Typography className={classes.subtitle}>BEWINE</Typography>
+              <Typography className={classes.subtitle}>{mainTitle1}</Typography>
             </Grid>
 
             <Grid item container xs={12} sm={12} justify="center">
               <Typography className={classes.title}>
-                MEET OUR
+                {mainTitle2FirstLine}
                 <span style={{ color: "#80a093", display: "block" }}>
-                  FAMILY BUSINESS
+                  {mainTitle2SecondLine}
                 </span>
               </Typography>
             </Grid>
             <Grid item container spacing={3}>
               <BusinessCard
-                titleFirstLine="VISIT"
-                titleSecondLine="A VINEYARD"
-                price="59"
-                image="/assets/home1.jpg"
-                description="Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere urna libero."
+                titleFirstLine={cardTitleFirstLine1}
+                titleSecondLine={cardTitleSecondLine1}
+                subtitle={cardsubtitle1}
+                image={cardimage1}
+                description={carddescription1}
               />
               <BusinessCard
-                titleFirstLine="WINE"
-                titleSecondLine="TASTING"
-                price="129"
-                image="/assets/home2.jpg"
-                description="Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere urna libero."
+                titleFirstLine={cardTitleFirstLine2}
+                titleSecondLine={cardTitleSecondLine2}
+                subtitle={cardsubtitle2}
+                image={cardimage2}
+                description={carddescription2}
               />
               <BusinessCard
-                titleFirstLine="DINNER"
-                titleSecondLine="WITH FRIENDS"
-                price="229"
-                image="/assets/home3.jpg"
-                description="Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere urna libero."
+                titleFirstLine={cardTitleFirstLine3}
+                titleSecondLine={cardTitleSecondLine3}
+                subtitle={cardsubtitle3}
+                image={cardimage3}
+                description={carddescription3}
               />
             </Grid>
 
@@ -113,4 +132,4 @@ const MeetOurFamilyBusiness = () => {
   );
 };
 
-export default MeetOurFamilyBusiness;
+export default ProfileDisplayGrid;

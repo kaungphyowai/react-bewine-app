@@ -53,7 +53,7 @@ const BusinessCard = ({
   titleFirstLine,
   titleSecondLine,
   image,
-  price,
+  subtitle,
   description,
 }) => {
   const classes = useStyle();
@@ -78,7 +78,7 @@ const BusinessCard = ({
         </Grid>
         <Grid item container xs={12} justify="center">
           <Typography align="center" className={classes.subtitle}>
-            {price} €
+            {subtitle}
           </Typography>
         </Grid>
         <Grid item container xs={12}>

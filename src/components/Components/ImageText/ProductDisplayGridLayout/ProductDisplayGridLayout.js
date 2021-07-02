@@ -1,7 +1,7 @@
 import { Grid, makeStyles, Typography, Box, Button } from "@material-ui/core";
 
 import React from "react";
-import Ingredients from "./Ingredients";
+import ProductColumn from "./ProductColumn";
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
@@ -39,7 +39,20 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const HowWeWork = () => {
+const ProductDisplayGridLayout = ({
+  imgSrc1,
+  imgSrc2,
+  imgSrc3,
+  imgSrc4,
+  title1,
+  title2,
+  title3,
+  title4,
+  subtitle1,
+  subtitle2,
+  subtitle3,
+  subtitle4,
+}) => {
   const classes = useStyles();
   return (
     <>
@@ -58,25 +71,25 @@ const HowWeWork = () => {
               </Typography>
             </Grid>
             <Grid container spacing={4} sm={12}>
-              <Ingredients
-                title="ELEIFEND JUSTO BIBENDUM"
-                image="/assets/grape1.png"
-                description="Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum feugiat."
+              <ProductColumn
+                title={title1}
+                image={imgSrc1}
+                description={subtitle1}
               />
-              <Ingredients
-                title="LECTUS FELIS ULTRICIES"
-                image="/assets/grape2.png"
-                description="Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum feugiat."
+              <ProductColumn
+                title={title2}
+                image={imgSrc2}
+                description={subtitle2}
               />
-              <Ingredients
-                title="INTEGER ULTRICES"
-                image="/assets/grape3.png"
-                description="Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum feugiat."
+              <ProductColumn
+                title={title3}
+                image={imgSrc3}
+                description={subtitle3}
               />
-              <Ingredients
-                title="ELEIFEND JUSTO BIBENDUM"
-                image="/assets/grape4.png"
-                description="Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum feugiat."
+              <ProductColumn
+                title={title4}
+                image={imgSrc4}
+                description={subtitle4}
               />
             </Grid>
             <Box pt={10} pb={10} style={{ minWidth: "100%" }}>
@@ -119,4 +132,4 @@ const HowWeWork = () => {
   );
 };
 
-export default HowWeWork;
+export default ProductDisplayGridLayout;

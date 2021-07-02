@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Tenor Sans",
   },
 }));
-const Ingredients = ({ title, description, image }) => {
+const ProductColumn = ({ title, description, image }) => {
   const classes = useStyles();
   return (
     <Grid item container xs={12} sm={3}>
@@ -46,4 +46,4 @@ const Ingredients = ({ title, description, image }) => {
   );
 };
 
-export default Ingredients;
+export default ProductColumn;
