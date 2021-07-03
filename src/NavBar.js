@@ -36,16 +36,16 @@ const NavBar = () => {
           <Typography variant="h6" className={classes.title}>
             Bewine
           </Typography>
-          <Link to="/">
+          <Link to="/react-bewine-app/">
             <Button className={classes.linkStyle}>HOME</Button>
           </Link>
-          <Link to="/about">
+          <Link to="/react-bewine-app/about">
             <Button className={classes.linkStyle}>ABOUT US</Button>
           </Link>
-          <Link to="/wines">
+          <Link to="/react-bewine-app/wines">
             <Button className={classes.linkStyle}>WINES</Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/react-bewine-app/contact">
             <Button className={classes.linkStyle}>CONTACT</Button>
           </Link>
         </Toolbar>

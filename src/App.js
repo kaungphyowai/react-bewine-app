@@ -12,16 +12,16 @@ const App = () => {
     <Router>
       <NavBar></NavBar>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/react-bewine-app/">
           <HomePage />
         </Route>
-        <Route exact path="/about">
+        <Route exact path="/react-bewine-app/about">
           <AboutUsPage />
         </Route>
-        <Route exact path="/wines">
+        <Route exact path="/react-bewine-app/wines">
           <Wines />
         </Route>
-        <Route exact path="/contact">
+        <Route exact path="/react-bewine-app/contact">
           <ContactPage />
         </Route>
       </Switch>
