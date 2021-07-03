@@ -1,10 +1,10 @@
-import { Grid, makeStyles, Typography, Box, Button } from "@material-ui/core";
-import SectionTitle2 from "../SectionTitle/SectionTitle2";
 import React from "react";
-import ProductColumn from "./ProductColumn";
+import { Grid, makeStyles, Box, Button, TextField } from "@material-ui/core";
+
+import SectionTitle2 from "../Components/SectionTitle/SectionTitle2";
 const useStyles = makeStyles((theme) => ({
   root: {
-    minHeight: "100vh",
+    minWidth: "100%",
     backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/bg3.png"})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -38,54 +38,71 @@ const useStyles = makeStyles((theme) => ({
       padding: "15px 30px",
     },
   },
+  inputStyle: {
+    color: "#000",
+    width: "100%",
+    padding: "10px 10px",
+    border: "none",
+    [theme.breakpoints.up("sm")]: {
+      marginRight: "20px",
+    },
+  },
+  textField: {
+    marginBottom: "30px",
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: "10px",
+    },
+  },
 }));
-const ProductDisplayGridLayout = ({
-  imgSrc1,
-  imgSrc2,
-  imgSrc3,
-  imgSrc4,
-  title1,
-  title2,
-  title3,
-  title4,
-  subtitle1,
-  subtitle2,
-  subtitle3,
-  subtitle4,
-}) => {
+const ContactForm = () => {
   const classes = useStyles();
   return (
     <>
       <Box pt={10} className={classes.root}>
-        <Grid container>
+        <Grid container item xs={12}>
           {/* First Padding */}
           <Grid item xs={1} sm={2} />
           {/* Content */}
           <Grid item container xs={10} sm={8}>
             <SectionTitle2
-              title="HOW WE WORK"
-              LargeTitle="THE BEST INGREDIENTS"
+              title="CONTACT FORM"
+              LargeTitle="DO YOU HAVE A QUESTION?"
             />
-            <Grid container spacing={4} sm={12}>
-              <ProductColumn
-                title={title1}
-                image={imgSrc1}
-                description={subtitle1}
+            {/* Your First Name */}
+            <Grid item container xs={12} sm={6} className={classes.textField}>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name"
+                className={classes.inputStyle}
               />
-              <ProductColumn
-                title={title2}
-                image={imgSrc2}
-                description={subtitle2}
+            </Grid>
+            <Grid item container xs={12} sm={6} className={classes.textField}>
+              <input
+                type="text"
+                id="femail"
+                name="email"
+                placeholder="Your email"
+                className={classes.inputStyle}
               />
-              <ProductColumn
-                title={title3}
-                image={imgSrc3}
-                description={subtitle3}
+            </Grid>
+            <Grid item container xs={12} sm={12} className={classes.textField}>
+              <input
+                type="Subject"
+                id="fsubject"
+                name="Subject"
+                placeholder="Subject"
+                className={classes.inputStyle}
               />
-              <ProductColumn
-                title={title4}
-                image={imgSrc4}
-                description={subtitle4}
+            </Grid>
+            <Grid item container xs={12} sm={12}>
+              <textarea
+                id="Message"
+                name="Message"
+                placeholder="Message"
+                className={classes.inputStyle}
+                style={{ height: "10vh" }}
               />
             </Grid>
             <Box pt={10} pb={10} style={{ minWidth: "100%" }}>
@@ -94,18 +111,9 @@ const ProductDisplayGridLayout = ({
                   <Button
                     variant="contained"
                     className={classes.buttonStyle}
-                    style={{ backgroundColor: "#053C23" }}
+                    style={{ backgroundColor: "#62021D" }}
                   >
-                    SEE OUR VINEYARDS
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button
-                    variant="contained"
-                    className={classes.buttonStyle}
-                    style={{ backgroundColor: "#779589" }}
-                  >
-                    OUR WINES
+                    Send a message
                   </Button>
                 </Grid>
               </Grid>
@@ -128,4 +136,4 @@ const ProductDisplayGridLayout = ({
   );
 };
 
-export default ProductDisplayGridLayout;
+export default ContactForm;

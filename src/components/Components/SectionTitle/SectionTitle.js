@@ -24,7 +24,7 @@ const SectionTitle = ({ firstTitle, LargeWhiteTitle, LargeFadedTitle }) => {
         <Typography className={classes.subtitle}>{firstTitle}</Typography>
       </Grid>
       {/* History and tradition of our vineyards */}
-      <Grid item container xs={10} sm={12} justify="center">
+      <Grid item container xs={12} sm={12} justify="center">
         <Typography variant="h2" className={classes.title}>
           {LargeWhiteTitle}
           <span style={{ color: "#80a093", display: "block" }}>
