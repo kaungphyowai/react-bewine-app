@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Box } from "@material-ui/core";
 import ImageText from "../Components/ImageText/ImageText";
+import TextColumn1 from "../Components/ImageText/TextColumn1";
 const History = () => {
   return (
     <>
@@ -13,33 +14,41 @@ const History = () => {
             {/* Image and text */}
             <ImageText
               imgSrc="/assets/1923.jpg"
-              whiteText="Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+              textColumn={
+                <TextColumn1
+                  whiteText="Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
               suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
               tincidunt."
-              goldText1="Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam
+                  goldText1="Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam
               quis quam venenatis fringilla. Morbi vestibulum id tellus commodo
               mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper.
               Lorem ipsum."
-              goldText2="Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui
+                  goldText2="Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui
               eget mollis. Nullam lacinia dictum auctor. Class aptent taciti
               sociosqu ad litora torquent per conubia nostra, per inceptos
               himenaeos. Orci varius natoque"
-              goldText3="Penatibus et magnis dis parturient montes."
+                  goldText3="Penatibus et magnis dis parturient montes."
+                />
+              }
             />
             <ImageText
               imgSrc="/assets/1897.jpg"
-              whiteText="Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-              suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-              tincidunt."
-              goldText1="Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam
-              quis quam venenatis fringilla. Morbi vestibulum id tellus commodo
-              mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper.
-              Lorem ipsum."
-              goldText2="Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui
-              eget mollis. Nullam lacinia dictum auctor. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Orci varius natoque"
-              goldText3="Penatibus et magnis dis parturient montes."
+              textColumn={
+                <TextColumn1
+                  whiteText="Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+                suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                tincidunt."
+                  goldText1="Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam
+                quis quam venenatis fringilla. Morbi vestibulum id tellus commodo
+                mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper.
+                Lorem ipsum."
+                  goldText2="Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui
+                eget mollis. Nullam lacinia dictum auctor. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Orci varius natoque"
+                  goldText3="Penatibus et magnis dis parturient montes."
+                />
+              }
               imgRight={false}
             />
           </Grid>

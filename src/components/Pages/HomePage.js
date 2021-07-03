@@ -5,7 +5,6 @@ import QuickContact from "../HomeComponent/QuickContact";
 import AboutUs from "../HomeComponent/AboutUs";
 import HowWeWork from "../HomeComponent/HowWeWork";
 import MeetOurFamilyBusiness from "../HomeComponent/MeetOurFamilyBusiness";
-import JoinNow from "../HomeComponent/JoinNow";
 const HomePage = () => {
   return (
     <Grid container direction="column">
@@ -23,9 +22,6 @@ const HomePage = () => {
       </Grid>
       <Grid item container>
         <MeetOurFamilyBusiness />
-      </Grid>
-      <Grid item container>
-        <JoinNow />
       </Grid>
     </Grid>
   );

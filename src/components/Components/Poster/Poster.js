@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "60vh",
     backgroundSize: "cover",
     backgroundColor: "#064125",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/bg2.jpg"})`,
     backgroundPosition: "center top",
     minWidth: "100%",
   },
@@ -24,10 +23,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Poster = () => {
+const Poster = ({ imgSrc, textwhite, textGoldInline, textGoldBlock }) => {
   const classes = useStyles();
   return (
-    <Box className={classes.root}>
+    <Box
+      className={classes.root}
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL + imgSrc})`,
+      }}
+    >
       <img
         src={process.env.PUBLIC_URL + "/assets/joint4.png"}
         style={{
@@ -46,9 +50,9 @@ const Poster = () => {
         justify="center"
       >
         <Typography className={classes.textStyle}>
-          LEARN ABOUT OUR{" "}
+          {textwhite} <span style={{ color: "#d3ad7f" }}>{textGoldInline}</span>
           <span style={{ color: "#d3ad7f", display: "block" }}>
-            RICH HERITAGE
+            {textGoldBlock}
           </span>
         </Typography>
       </Grid>

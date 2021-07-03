@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, Box, Button, makeStyles } from "@material-ui/core";
 import BusinessCard from "../../HomeComponent/BusinessCard";
-
+import SectionTitle from "../SectionTitle/SectionTitle";
 const useStyles = makeStyles((theme) => ({
   subtitle: {
     color: "#ead4c0",
@@ -58,18 +58,11 @@ const ProfileDisplayGrid = ({
           <Grid item xs={1} sm={3} />
           {/* Content */}
           <Grid item container xs={10} sm={6}>
-            <Grid item container xs={12} sm={12} justify="center">
-              <Typography className={classes.subtitle}>{mainTitle1}</Typography>
-            </Grid>
-
-            <Grid item container xs={12} sm={12} justify="center">
-              <Typography className={classes.title}>
-                {mainTitle2FirstLine}
-                <span style={{ color: "#80a093", display: "block" }}>
-                  {mainTitle2SecondLine}
-                </span>
-              </Typography>
-            </Grid>
+            <SectionTitle
+              firstTitle={mainTitle1}
+              LargeWhiteTitle={mainTitle2FirstLine}
+              LargeFadedTitle={mainTitle2SecondLine}
+            />
             <Grid item container spacing={3}>
               <BusinessCard
                 titleFirstLine={cardTitleFirstLine1}

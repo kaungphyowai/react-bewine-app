@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Text = ({ whiteText, goldText1, goldText2, goldText3 }) => {
+const TextColumn1 = ({ whiteText, goldText1, goldText2, goldText3 }) => {
   const classes = useStyles();
   return (
     //   Text
@@ -40,4 +40,4 @@ const Text = ({ whiteText, goldText1, goldText2, goldText3 }) => {
   );
 };
 
-export default Text;
+export default TextColumn1;

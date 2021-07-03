@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography, makeStyles } from "@material-ui/core";
-import Text from "./Text";
+import TextColumn1 from "./TextColumn1";
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingBottom: "40px",
@@ -14,6 +14,7 @@ const ImageText = ({
   goldText2,
   goldText3,
   imgRight = true,
+  textColumn,
 }) => {
   const classes = useStyles();
   return (
@@ -27,22 +28,12 @@ const ImageText = ({
             />
           </Grid>
           <Box component={Grid} item xs={1} display={{ sm: "none" }} />
-          <Text
-            whiteText={whiteText}
-            goldText1={goldText1}
-            goldText2={goldText2}
-            goldText3={goldText3}
-          />
+          {textColumn}
         </>
       ) : (
         <>
           <Box component={Grid} item xs={1} display={{ sm: "none" }} />
-          <Text
-            whiteText={whiteText}
-            goldText1={goldText1}
-            goldText2={goldText2}
-            goldText3={goldText3}
-          />
+          {textColumn}
           <Grid item container xs={12} sm={6} justify="flex-end">
             <img
               src={process.env.PUBLIC_URL + imgSrc}

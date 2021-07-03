@@ -2,18 +2,13 @@ import { makeStyles, Grid, Typography, Box, Button } from "@material-ui/core";
 import React from "react";
 import NumberContent from "./NumberContent";
 import ImageText from "../Components/ImageText/ImageText";
+import TextColumn1 from "../Components/ImageText/TextColumn1";
+import SectionTitle from "../Components/SectionTitle/SectionTitle";
 const useStyles = makeStyles((theme) => ({
   subtitle: {
     color: "#ead4c0",
     fontWeight: "bold",
     fontSize: "small",
-    marginBottom: "30px",
-  },
-  title: {
-    color: "#fff",
-    fontSize: "230%",
-    fontWeight: "bolder",
-    textAlign: "center",
     marginBottom: "30px",
   },
 
@@ -45,34 +40,30 @@ const AboutUs = () => {
           <Grid item xs={0} sm={2} />
           {/* Content */}
           <Grid item container xs={12} sm={8} justify="center">
-            {/* About us */}
-            <Grid item container xs={12} sm={12} justify="center">
-              <Typography className={classes.subtitle}>ABOUT US</Typography>
-            </Grid>
-            {/* History and tradition of our vineyards */}
-            <Grid item container xs={10} sm={12} justify="center">
-              <Typography variant="h2" className={classes.title}>
-                HISTORY AND TRADITION
-                <span style={{ color: "#80a093", display: "block" }}>
-                  OF OUR VINEYARDS
-                </span>
-              </Typography>
-            </Grid>
+            <SectionTitle
+              firstTitle="ABOUT US"
+              LargeWhiteTitle="HISTORY AND TRADITION"
+              LargeFadedTitle="OF OUR VINEYARDS"
+            />
             {/* Image and text */}
             <ImageText
               imgSrc="/assets/1897.jpg"
-              whiteText="Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-              suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-              tincidunt."
-              goldText1="Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam
-              quis quam venenatis fringilla. Morbi vestibulum id tellus commodo
-              mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper.
-              Lorem ipsum."
-              goldText2="Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui
-              eget mollis. Nullam lacinia dictum auctor. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Orci varius natoque"
-              goldText3="Penatibus et magnis dis parturient montes."
+              textColumn={
+                <TextColumn1
+                  whiteText="Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+                  suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                  tincidunt."
+                  goldText1="Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut quam
+                  quis quam venenatis fringilla. Morbi vestibulum id tellus commodo
+                  mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper.
+                  Lorem ipsum."
+                  goldText2="Duis ultricies malesuada leo vel aliquet. Curabitur rutrum porta dui
+                  eget mollis. Nullam lacinia dictum auctor. Class aptent taciti
+                  sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos. Orci varius natoque"
+                  goldText3="Penatibus et magnis dis parturient montes."
+                />
+              }
             />
             {/* Number Content */}
             <Grid item container xs={12} sm={12} spacing={6} justify="center">
