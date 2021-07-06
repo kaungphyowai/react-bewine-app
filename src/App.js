@@ -7,6 +7,11 @@ import JoinNow from "./components/HomeComponent/JoinNow";
 import Wines from "./components/Pages/Wines";
 import ContactPage from "./components/Pages/ContactPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import FirebaseSignInAnonymously from "./components/Pages/FirebaseSignInAnonymously";
+import firebase from "firebase/app";
+import "firebase/auth";
+import { FirebaseAuthProvider } from "@react-firebase/auth";
+import config from "./firebaseCredential";
 const App = () => {
   return (
     <Router>
@@ -24,10 +29,15 @@ const App = () => {
         <Route exact path="/react-bewine-app/contact">
           <ContactPage />
         </Route>
+        <Route exact path="/react-bewine-app/firebase">
+          <FirebaseAuthProvider firebase={firebase} {...config}>
+            <FirebaseSignInAnonymously />
+          </FirebaseAuthProvider>
+        </Route>
       </Switch>
 
-      <JoinNow />
-      <Footer />
+      {/* <JoinNow />
+      <Footer /> */}
     </Router>
   );
 };
