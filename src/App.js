@@ -6,6 +6,7 @@ import AboutUsPage from "./components/Pages/AboutUsPage";
 import JoinNow from "./components/HomeComponent/JoinNow";
 import Wines from "./components/Pages/Wines";
 import ContactPage from "./components/Pages/ContactPage";
+import FirebaseSignUpPage from "./components/Pages/FirebaseSignUpPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
   return (
@@ -24,10 +25,13 @@ const App = () => {
         <Route exact path="/react-bewine-app/contact">
           <ContactPage />
         </Route>
+        <Route exact path="/react-bewine-app/firebase">
+          <FirebaseSignUpPage />
+        </Route>
       </Switch>
 
-      <JoinNow />
-      <Footer />
+      {/* <JoinNow />
+      <Footer /> */}
     </Router>
   );
 };
