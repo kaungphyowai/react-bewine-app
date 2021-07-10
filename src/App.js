@@ -7,6 +7,7 @@ import JoinNow from "./components/HomeComponent/JoinNow";
 import Wines from "./components/Pages/Wines";
 import ContactPage from "./components/Pages/ContactPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Hooks from "./components/Pages/Hooks";
 const App = () => {
   return (
     <Router>
@@ -24,10 +25,13 @@ const App = () => {
         <Route exact path="/react-bewine-app/contact">
           <ContactPage />
         </Route>
+        <Route exact path="/react-bewine-app/hooks">
+          <Hooks></Hooks>
+        </Route>
       </Switch>
 
-      <JoinNow />
-      <Footer />
+      {/* <JoinNow />
+      <Footer /> */}
     </Router>
   );
 };

@@ -48,6 +48,9 @@ const NavBar = () => {
           <Link to="/react-bewine-app/contact">
             <Button className={classes.linkStyle}>CONTACT</Button>
           </Link>
+          <Link to="/react-bewine-app/hooks">
+            <Button className={classes.linkStyle}>HOOKS</Button>
+          </Link>
         </Toolbar>
       </AppBar>
       <div className={classes.offset} />
